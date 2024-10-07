@@ -1,6 +1,14 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @import url('https://fonts.cdnfonts.com/css/doom-2016-text');
+
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 0;
     font-family: 'Doom 2016 Text', sans-serif;
 
@@ -14,6 +22,7 @@ body {
     background-color: grey;
     background-image: url('../Images/Menu-texture.png');
     background-size: cover; 
+    overflow: none;
 }
 
 .menu-inhoud {
@@ -29,7 +38,7 @@ body {
 }
 
 .menu-inhoud li {
-    margin: 0 95px;
+    margin: 0 50px;
 }
 
 .menu-inhoud a {
