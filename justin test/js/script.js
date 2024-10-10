@@ -39,6 +39,7 @@ function navigate(page) {
             break;
         default:
             message = "Unknown Option!";
+    
     }
 
     messageContainer.textContent = message;
