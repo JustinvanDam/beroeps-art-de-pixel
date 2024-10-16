@@ -94,33 +94,35 @@ body {
     width: 20%;
 }
 
-
-/* Styling for the vertical text block */
 .info-block {
-  background-color: rgba(58, 58, 58, 0.8); /* Semi-transparent gray background */
-  color: #f5f5f5; /* Light gray text */
+  background-color: rgba(58, 58, 58, 0.8);
   padding: 20px;
-  width: 250px; /* Fixed width of the block */
-  max-width: 90%; /* Allow the block to shrink responsively */
-  height: auto; /* Height grows with content */
-  position: relative; /* Keep the block relative */
-  margin: 40px 20px; /* Adds space from the sides (top/bottom, left/right) */
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-  font-family: Arial, sans-serif; /* Only apply Arial, sans-serif to this block */
-  border-radius: 8px; /* Rounded corners for a softer look */
-  display: flex; /* Enable flexbox for vertical alignment */
-  flex-direction: column; /* Align children in a column */
+  width: 250px;
+  max-width: 90%;
+  height: auto;
+  position: relative;
+  margin: 40px 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
-/* Heading styles */
 .title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px; /* Reduce margin for better spacing */
+  margin-bottom: 10px;
 }
 
-/* Paragraph styles */
 .content {
   font-size: 16px;
   line-height: 1.5;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    padding-top: 100px;
 }
