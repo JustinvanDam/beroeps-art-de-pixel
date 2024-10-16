@@ -21,7 +21,7 @@ body {
 
 
 .fade-out {
-    animation: fadeOutEffect 1s ease forwards;
+    animation: fadeOutEffect 1.0s ease forwards;
 }
 
 
@@ -36,7 +36,7 @@ body {
 
 
 .fade-in {
-    animation: fadeInEffect 1s ease forwards;
+    animation: fadeInEffect 1.5s ease forwards;
 }
 
 
