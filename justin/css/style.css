@@ -16,8 +16,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-
 
 
 .fade-out {
@@ -163,3 +163,79 @@ body {
     background: #00ffcc;
 }
 
+
+
+.campaign-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    text-align: center; /* Centreert de tekst in de campaign-content container */
+}
+
+.hero {
+    margin: 20px 0;
+    text-align: center; /* Centreert de afbeelding */
+}
+
+.hero img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.7);
+    max-width: 100%;
+    height: auto;
+    display: inline-block; /* Houdt de afbeelding gecentreerd binnen de container */
+}
+
+h2 {
+    color: #00ccff;
+    text-shadow: 0 0 15px rgba(0, 204, 255, 1);
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-align: center; /* Centreert de koppen */
+}
+
+p {
+    text-align: center; /* Centreert alle paragrafen */
+}
+
+.character-grid, .location-grid {
+    display: flex;
+    justify-content: center; /* Zorgt ervoor dat de kaarten in het midden staan */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.character-card, .location-card {
+    flex: 1 1 calc(33% - 40px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.5);
+    text-align: center;
+    max-width: 300px; /* Zorgt ervoor dat de kaarten niet te groot worden en gecentreerd blijven */
+}
+
+.character-card img, .location-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.image-caption {
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 10px;
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    color: #00ccff;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-left: 3px solid #00ccff;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center; /* Centreert de blockquote */
+    max-width: 800px; /* Zorgt ervoor dat de blockquote gecentreerd blijft */
+}
