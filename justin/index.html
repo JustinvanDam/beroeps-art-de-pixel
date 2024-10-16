@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>justin</title>
+    <title>Menu - Halo </title>
     <link rel="stylesheet" href="css/style.css">
-    <script src=js/script.js defer></script>
-
 </head>
-
 <body>
-    <div class="background">
-        <img id="Achtergrond1" src="images/halo2.jpg" draggable="false" />
-        
+    <div class="halo-menu">
+        <h1 class="title">HALO</h1>
+        <div class="menu">
+            <button class="menu-item" onclick="navigate('campaign')">CAMPAIGN</button>
+            <button class="menu-item" onclick="navigate('multiplayer')">MULTIPLAYER</button>
+            <button class="menu-item" onclick="navigate('profiles')">GESCHIEDENIS</button>
+            <button class="menu-item" onclick="navigate('settings')">VIDEO</button>
+            <button class="menu-item" onclick="navigate('credits')">EXTRA INFO</button>
+            <button class="menu-item" onclick="navigate('quit')">TERUG NAAR INDEX</button>
+            
+        </div>
     </div>
-    <div class="menu">
-        <ul class="menu-inhoud">
-            <li><a href="">Index</a></li>
-            <li><a href="">Games en tijdperken</a></li>
-            <li><a href="">Extra info</a></li>
-            <li><a href="">Quiz</a></li>
-        </ul>
-    </div>
-</body>
 
+    <script src="js/script.js"></script>
+</body>
 </html>

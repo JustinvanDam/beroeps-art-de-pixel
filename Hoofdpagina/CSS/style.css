@@ -1,6 +1,99 @@
-a {
-    text-decoration: none;
-}
+/* Algemene stijl voor de body */
 body {
-    font-size: xx-large;
+    font-family: '', cursive;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
 }
+
+/* Animatie voor het retro grid */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #222 25%, transparent 25%), 
+                linear-gradient(-45deg, #222 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #222 75%),
+                linear-gradient(-45deg, transparent 75%, #222 75%);
+    background-size: 40px 40px;
+    z-index: -1;
+    opacity: 0.5;
+    animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0, 0 0, 0 0, 0 0;
+    }
+    to {
+        background-position: 80px 80px, 80px 80px, -80px -80px, -80px -80px;
+    }
+}
+
+/* Container voor centrale uitlijning */
+.container {
+    text-align: center;
+    z-index: 1;
+}
+
+/* Stijl voor de titel */
+h1 {
+    font-size: 2.5em;
+    color: #ff6b6b;
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.8), 0 0 20px rgba(255, 107, 107, 0.5);
+    margin: 0;
+}
+
+/* Paragraafstijl */
+p {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 20px 0 40px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Menu stijl */
+ul.game-menu {
+    list-style: none;
+    padding: 0;
+}
+
+ul.game-menu li {
+    margin: 20px 0;
+}
+
+.game-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+    padding: 20px 40px;
+    border: 3px solid #ff6b6b;
+    border-radius: 10px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover-animatie */
+.game-link:hover {
+    color: #121212;
+    background-color: #ff6b6b;
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.7);
+    border-color: #fff;
+    transform: scale(1.1);
+}
+
+.game-link::before {
+    content: "";
+    posit
