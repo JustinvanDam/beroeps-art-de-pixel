@@ -9,7 +9,7 @@ navigator.mediaDevices.getUserMedia({video: true})
    });
 function checkawnsers() {
  
-      let correctAnswers = ['a', 'b', 'c', 'b']; // Update these with the correct answers
+      let correctAnswers = ['a', 'b', 'a', 'b'];
   
 
       let userAnswers = [];
